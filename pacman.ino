@@ -104,7 +104,9 @@ void setup() {
   lcd.write(byte(1));
   lcd.print("PAC-MAN");
   lcd.write(byte(0));
-  delay(2000);
+  lcd.setCursor(9, 1);
+  lcd.print("*almost");
+  while(analogRead(0) > 1000) {}
   lcd.clear();
   lcd.setCursor(0, 0);
   lcd.write(byte(0));
