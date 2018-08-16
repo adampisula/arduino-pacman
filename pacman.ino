@@ -135,7 +135,7 @@ void loop() {
       {
         lcd.clear();
         lcd.setCursor(4, 0);
-        lcd.print("You win!");
+        lcd.print("Victory Royale!");
         delay(5000);
 
         //RESET ARDUINO
